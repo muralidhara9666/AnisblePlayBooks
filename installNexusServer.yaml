@@ -2,9 +2,9 @@
   become: true
   gather_facts: no
   tasks:
-   - name: Install Java 1.8
+   - name: Install Java 
      yum:
-      name: java-1.8.0-openjdk
+      name: java-11-amazon-corretto-devel
       state: present
    - name: Download nexus software
      get_url:
